@@ -21,6 +21,10 @@ CACHE_DIR="${2}/${STACK}"
 PROFILE_PATH="$BUILD_DIR/.profile.d/geo.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 
+echo "HEROKU_GEO_BUILDBACK_S3_BUCKET: ${HEROKU_GEO_BUILDBACK_S3_BUCKET}"
+echo "S3_BUCKET: ${S3_BUCKET}"
+echo "STACK: ${STACK}"
+
 # Functions
 function indent() {
   c='s/^/       /'
